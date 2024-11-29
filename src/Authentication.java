@@ -38,4 +38,8 @@ public class Authentication {
         return tenant;
     }
 
+    public Tenant getAuthenticatedUser(){
+        return tenant;
+    }
+
 }
