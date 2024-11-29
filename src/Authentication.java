@@ -30,11 +30,11 @@ public class Authentication {
             }
 
             if(tenant != null){
-                break;
+                return tenant;
+            }else {
+                System.out.println("Could not sign in, try again!");
             }
-            System.out.println("Could not sign in, try again!");
         }
-
         return tenant;
     }
 
