@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Authentication {
     private Tenant tenant;
-    private Tenant[] userDatabase;
+    private final Tenant[] userDatabase;
 
     public Authentication(){
         userDatabase = new Tenant[2];
