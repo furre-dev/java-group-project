@@ -1,5 +1,3 @@
-package Book;
-
 import java.util.List;
 
 public class Profile {
@@ -29,12 +27,12 @@ public class Profile {
 
     @Override
     public String toString() {
-        return "Book.Profile{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", age=" + age +
-                ", address='" + address + '\'' +
-                ", phoneNumbers=" + phoneNumbers +
+        return "{" +
+                "first name: '" + firstName + '\'' +
+                ", last name: '" + lastName + '\'' +
+                ", age: " + age +
+                ", address: '" + address + '\'' +
+                ", phone numbers:" + phoneNumbers +
                 '}';
     }
 }

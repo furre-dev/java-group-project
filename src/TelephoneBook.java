@@ -1,5 +1,3 @@
-package Book;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -94,7 +92,8 @@ public class TelephoneBook {
             System.out.println("No profiles available in the telephone book.");
         } else {
             for (Profile profile : profiles) { // Print each profile.
-                System.out.println(profile);
+                System.out.println("WAZAHH");
+                System.out.println(profile.toString());
             }
         }
     }
