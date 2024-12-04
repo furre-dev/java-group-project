@@ -1,15 +1,16 @@
 public class Main {
     public static void main(String[] args) {
+        // Create instances of Authentication and TelephoneBook.
         Authentication auth = new Authentication();
+        TelephoneBook telephoneBook = new TelephoneBook();
 
-        //Logga in (returnerar användarprofilen som vi loggar in med)
+        // Authenticate the user (login process).
         Tenant tenant = auth.login();
 
-        //Få tillgång till användare vart som helst
-        Tenant authedTenant = auth.getAuthenticatedUser();
-
-        //Få tillgång till användarens roll
+        // Check the role of the logged-in user.
         boolean tenantIsAdmin = tenant.isAdmin();
 
+        // Delegate control to TelephoneBook's main menu.
+        telephoneBook.run(tenant);
     }
 }
